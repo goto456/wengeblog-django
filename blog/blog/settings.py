@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'bootstrap_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -70,6 +71,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'zinnia.context_processors.version',  # Optional
+                'django.template.context_processors.request',
             ],
             'loaders': [
                 'app_namespace.Loader',
@@ -79,6 +81,7 @@ TEMPLATES = [
         },
     },
 ]
+BOOTSTRAP_ADMIN_SIDEBAR_MENU = True
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
