@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'zinnia_bootstrap',
     'zinnia',
     'bootstrap',
+    'duoshuo',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -121,3 +122,6 @@ STATIC_URL = '/static/'
 SITE_ID = 1
 
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
+
+DUOSHUO_SECRET = 'fb7fd608d48ff3d4e41cbecb3a251ee4'
+DUOSHUO_SHORT_NAME = 'goto456'
