@@ -1,4 +1,5 @@
 {% load comments i18n zinnia %}
+{% load custom_markdown %}
 <article id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
   {% block entry-header %}
   <header class="entry-header page-header">
@@ -69,7 +70,7 @@
     {% endblock entry-image %}
     {% block entry-content %}
     <div class="entry-content lead">
-      {{ object_content|safe }}
+      {{ object_content|custom_markdown }}
     </div>
     {% endblock entry-content %}
     {% block continue-reading %}

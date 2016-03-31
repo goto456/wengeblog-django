@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'tagging',
     'zinnia_bootstrap',
     'zinnia',
+    'bootstrap',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -118,3 +119,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 SITE_ID = 1
+
+ZINNIA_MARKUP_LANGUAGE = 'markdown'

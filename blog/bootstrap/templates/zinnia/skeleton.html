@@ -34,9 +34,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "zinnia_bootstrap/assets/ico/apple-touch-icon-114-precomposed.png" %}" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "zinnia_bootstrap/assets/ico/apple-touch-icon-72-precomposed.png" %}" />
     <link rel="apple-touch-icon-precomposed" href="{% static "zinnia_bootstrap/assets/ico/apple-touch-icon-57-precomposed.png" %}" />
+
+    <link rel="stylesheet" href="{% static "highlight/styles/monokai.css" %}"/>
+    <script src="{% static "highlight/highlight.pack.js" %}"></script>
+
     {% block link %}{% endblock link %}
     {% block script %}{% endblock script %}
   </head>
+  <script>hljs.initHighlightingOnLoad();</script>
   <body class="zinnia {% block body-class %}{% endblock body-class %}">
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
