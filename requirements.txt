@@ -7,9 +7,13 @@ django-contrib-comments==1.6.1
 django-mptt==0.7.4
 django-tagging==0.4
 django-xmlrpc==0.1.5
+duoshuo-python-sdk==0.1
+markdown2==2.3.1
 mots-vides==2015.5.11
 Pillow==2.9.0
+PyJWT==1.4.0
 pyparsing==2.0.3
 pytz==2015.7
+requests==2.9.1
 six==1.10.0
 zinnia-theme-bootstrap==0.4

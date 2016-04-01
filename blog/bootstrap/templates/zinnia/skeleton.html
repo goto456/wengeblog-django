@@ -3,7 +3,7 @@
 <html lang="{{ LANGUAGE_CODE }}">
   <head>
     <meta charset="utf-8">
-    <title>Zinnia's Weblog - {% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %}</title>
+    <title>文哥博客 - {% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %}</title>
     <meta name="robots" content="follow, all" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="{% block meta-description %}{% trans "Just another Zinnia weblog." %}{% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
@@ -52,10 +52,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="{% static "zinnia_bootstrap/img/zinnia.png" %}" class="pull-left" alt="Zinnia's Weblog" />
-          <a href="{% url 'zinnia:entry_archive_index' %}" title="Zinnia's Welog" class="navbar-brand" rel="home">
-            文哥博客Zinnia's Weblog
+          <a href="{% url 'zinnia:entry_archive_index' %}"><img src="{% static "zinnia_bootstrap/img/wenge.jpg" %}" class="pull-left" alt="Zinnia's Weblog" height="50" width="50" /></a>
+          <a href="{% url 'zinnia:entry_archive_index' %}"><img src="{% static "zinnia_bootstrap/img/wengeblog.png" %}" class="pull-left" alt="Zinnia's Weblog" height="50" width="180" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <!--
+          <a href="{% url 'zinnia:entry_archive_index' %}" title="文哥博客" class="navbar-brand" rel="home"><p style="font-size:35px; color:white">
+              &nbsp&nbsp文哥博客&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
           </a>
+          -->
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-left">
