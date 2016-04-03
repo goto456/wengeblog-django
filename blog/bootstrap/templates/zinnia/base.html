@@ -2,6 +2,7 @@
 {% load zinnia i18n %}
 
 {% block sidebar %}
+<!--
 <aside id="widget-welcome" class="widget panel panel-default">
   <div class="panel-heading">
     {% trans "Welcome!" %}
@@ -15,18 +16,34 @@
     </p>
   </div>
 </aside>
+-->
+<aside id="widget-welcome" class="widget panel panel-default">
+  <div class="panel-heading">
+      {% trans "欢迎来到<strong>《文哥博客》</strong>" %}
+  </div>
+  <div class="panel-body">
+    <p>
+    {% trans "该网站由<a target='_blank' href='http://weibo.com/wangbiwen88'><strong>文哥</strong></a>基于<strong>Django</strong>搭建，由<strong>阿里云</strong>提供云计算支持" %}
+    </p>
+    <p>
+      {% trans "旨在分享在程序世界中的点点滴滴，与大家一起共同进步！" %}
+    </p>
+  </div>
+</aside>
 <aside id="widget-categories" class="widget panel panel-default">
   <div class="panel-heading">
     {% trans "Categories" %}
   </div>
   {% get_categories %}
 </aside>
+<!--
 <aside id="widget-authors" class="widget panel panel-default">
   <div class="panel-heading">
     {% trans "Authors" %}
   </div>
   {% get_authors %}
 </aside>
+-->
 <aside id="widget-recents" class="widget panel panel-default">
   <div class="panel-heading">
     {% trans "Recent entries" %}
