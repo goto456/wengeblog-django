@@ -3,12 +3,16 @@
 <article id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
   {% block entry-header %}
   <header class="entry-header page-header">
+    <!--
     <h2 class="entry-title">
+    -->
+    <h2 style="font-size:20px;" class="entry-title">
     {% block entry-title %}
       <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
         {{ object.title|widont }}
       </a>
     {% endblock entry-title %}
+    <!-- 
     {% block entry-info %}
       <br />
       <small class="entry-info">
@@ -42,6 +46,7 @@
         {% endblock entry-categories %}
       </small>
     {% endblock entry-info %}
+    -->
     </h2>
     {% block entry-last-update %}
     <p class="entry-last-update" style="display: none;">
@@ -69,10 +74,14 @@
     {% endif %}
     {% endblock entry-image %}
     {% block entry-content %}
+    <!--
     <div class="entry-content lead">
+    -->
+    <div style="font-size:14px; color:#666" class="entry-content lead">
       {{ object_content|custom_markdown }}
     </div>
     {% endblock entry-content %}
+    <!-- 注释掉了 “继续阅读”按钮
     {% block continue-reading %}
     {% if continue_reading and object_content.has_more %}
     <p class="continue-reading">
@@ -84,11 +93,15 @@
     </p>
     {% endif %}
     {% endblock continue-reading %}
+    -->
   </div>
   {% endblock entry-body %}
 
   {% block entry-footer %}
+  <!--
   <footer class="entry-footer well">
+  -->
+  <footer style="padding:5px;margin-bottom:50px;" class="entry-footer well">
     {% block entry-tags %}
     <p class="entry-tags">
       <span class="glyphicon glyphicon-tags"></span> <strong>{% trans "Tags" %}</strong> :
